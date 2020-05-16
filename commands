@@ -1,0 +1,121 @@
+git init
+git init <FolderName>
+git init .
+git checkout -b dev
+git add .
+git commit -m "message"
+git remote add origin https://git-codecommit.us-east-2.amazonaws.com/v1/repos/sls-cicd-repo
+git checkout dev
+git push --set-upstream origin dev
+git checkout master
+git push --set-upstream origin master
+
+Merge
+-- set current branch
+git checout master
+git merge dev
+--------------------------
+
+git remote -v
+
+git log
+
+git show
+
+git ls-files
+
+git commit -am "message"
+git restore --staged README.md
+git restore README.md
+git help log
+git log --oneline --graph --decorate --all
+git log --oneline --graph --decorate --all -- <FileName>
+git mv <old files> to <new files>  -- Rename files
+git rm <files Name>  --delete files
+git add -A -- checked all updation and delelation
+git add -u -- for deleation file\
+git diff <> <>
+git branch -al
+git branch -d <branchnmae >  --delete the branch
+git tag -a v1.0 -m "Release 1.0"
+git tag --list
+git show <Tag Name>
+git stash
+git stash pop
+git stash list
+
+git remote -v
+
+git remote add origin https://github.com/harishshir/demo.git  --- add to remote
+
+git push -u origin master --tags  --- first time push data to remote
+git push origin master
+
+git remote show origin
+
+git show  <commit-id>
+
+git rm  <filename>
+
+git push -u  origin <branchnmae>   --to start tracking
+
+git branch -a  --- list all branches
+
+git fetch -p  --update branch reference
+
+git branch -d <branchnmae> --delete branches locally
+
+git pull origin  <branch_name>
+
+git push origin <update-license> --- When upstream branch is not set
+
+git config --global -e  --to see global file\
+
+git pull --all    -- Pull all branches
+
+git branch -d <branch_name>   -- delete branch locally
+
+git push origin :update-license    --- delete remote branch
+
+git log --oneline   --get list of commits
+
+git tag <tag-name>  <branch/commit-id>
+
+git tag -a <name>  -m <message>   <branch/commit-id>
+
+git show <tag-name>
+
+ git push origin :<tag-name>   --push tag to remote
+ 
+ git push --tags  --push all tags to remote
+ 
+ --delete tag
+ 
+ git tag -d <tag-name>
+ 
+ git tag -d tag-develop
+ 
+ git push origin :tag-develop
+
+ --add remote branch
+ 
+ git remote  add <upstream>  <git clone url>
+
+-- pull record from specifice upstream
+
+git pull <upstream> <master>
+
+-- push to specifice remote
+
+git push origin master
+ 
+git fetch --all   --fetch all branches
+
+-------------------------------------------------------
+When there are same of branch in local,remote and fork branch
+to checkout the branch use below commmand
+
+git checkout -b <branch_name for example shared>  <remote_branch_location   for example origin/shared>
+
+-------------------------------------------
+
